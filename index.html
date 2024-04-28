@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon Tracker</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <h1>Select a Dungeon to Venture Forth!</h1>
+    <section id="dungeon-select" class="container">
+        <button id="lost-mine-of-phandelver-select" class="select-button">Lost Mine of Phandelver</button>
+        <button id="tomb-of-annihilation-select" class="select-button">Tomb of Annihilation</button>
+        <button id="dungeon-of-the-mad-mage-select" class="select-button">Dungeon of the Mad Mage</button>
+        <button id="undercity-select" class="select-button">The Undercity</button>
+    </section>
+
+    <section id="lost-mine-of-phandelver" class="dungeon container hidden">
+        
+        <section class="chamber whole start">
+            <h2>Cave Entrance</h2>
+            <p>Scry 1.</p>
+        </section>
+        <section class="chamber half">
+            <h2>Goblin Lair</h2>
+            <p>Create a 1/1 red Goblin creature token.</p>
+        </section>
+        <section class="chamber half">
+            <h2>Mine Tunnels</h2>
+            <p>Create a Treasure Token.</p>
+        </section>
+        <section class="chamber third">
+            <h2>Storeroom</h2>
+            <p>Put a +1/+1 counter on target creature.</p>
+        </section>
+        <section class="chamber third">
+            <h2>Dark Pool</h2>
+            <p>Each opponent loses 1 life and you gain 1 life</p>
+        </section>
+        <section class="chamber third">
+            <h2>Fungi Cavern</h2>
+            <p>Target creature gets -4/-0 until your next turn.</p>
+        </section>
+        <secton class="chamber whole">
+            <h2>Temple of Dumathion</h2>
+            <p>Draw a card.</p>
+        </secton>
+    </section>
+    <section id="tomb-of-annihilation" class="dungeon container hidden">
+        <section class="chamber whole start">
+            <h2>Trapped Entry</h2>
+            <p>Each player loses 1 life.</p>
+        </section>
+        <section class="sub container half">
+            <section class="chamber whole">
+                <h2>Veils of Fear</h2>
+                <p>Each player loses 2 life unless they discard a card.</p>
+            </section>
+            <section class="chamber whole">
+                <h2>Sandfall Cell</h2>
+                <p>Each player loses 2 life unless the sacriface an artifact, a creature, or a land.</p>
+            </section>
+        </section>
+        <section class="chamber half double">
+            <h2>Oubliette</h2>
+            <p>Discard a card and sacrifice an artifact, a creature, and a land.</p>
+        </section>
+        <section class="chamber whole">
+            <h2>Cradle of the Death God</h2>
+            <p>Create The Atrapol, a legendary 4/4 black God Horror creature token with deathtouch.</p>
+        </section>
+    </section>
+    <section id="dungeon-of-the-mad-mage" class="dungeon container hidden">
+        <section class="chamber start whole">
+            <h2>Yawning Portal</h2>
+            <p>You gain 1 life.</p>
+        </section>
+        <section class="chamber whole">
+            <h2>Dungeon Level</h2>
+            <p>Scry 1.</p>
+        </section>
+        <section class="chamber half">
+            <h2>Goblin Bazaar</h2>
+            <p>Create a treasure token</p>
+        </section>
+        <section class="chamber half">
+            <h2>Twisted Caverns</h2>
+            <p>Target creature can't attack until your next turn.</p>
+        </section>
+        <section class="chamber whole">
+            <h2>Lost Level</h2>
+            <p>Scry 2</p>
+        </section>
+        <section class="chamber half">
+            <h2>Runstone Caverns</h2>
+            <p>Exile the top two cards of your library. You may play them.</p>
+        </section>
+        <section class="chamber half">
+            <h2>Muiral's Graveyard</h2>
+            <p>Create two 1/1 black skeleton creature tokens.</p>
+        </section>
+        <section class="chamber whole">
+            <h2>Deep Mines</h2>
+            <p>Scry 3.</p>
+        </section>
+        <section class="chamber whole">
+            <h2>Mad Wizard's Lair</h2>
+            <p>Draw three cards and reveal them. You may cast one of them without paying its mana cost.</p>
+        </section>
+    </section>
+
+    <button id="reset">Venture Again?</button>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

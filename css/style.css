@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.dungeon {
+    width: 75vw;
+    border: 1px solid black;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    /* border: 1px solid black; */
+}
+
+.sub.container {
+    flex-flow: column-wrap;
+}
+
+.chamber.double {
+    height: 16rem;
+}
+
+.chamber {
+    border: 1px solid black;
+    height: 8rem;
+}
+
+.whole {
+    width: 100%;
+}
+
+.half {
+    width: 50%;
+}
+
+.third {
+    width: 33.33%;
+}
+/* Status Styles */
+
+.current {
+    background: lightgreen;
+}
+
+.hidden {
+    display: none;
+}
